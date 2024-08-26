@@ -1,0 +1,5 @@
+  # Proxy /api/ to localhost:8080
+    <Location /api/>
+        ProxyPass "http://localhost:8080/"
+        ProxyPassReverse "http://localhost:8080/"
+    </Location>
